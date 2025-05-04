@@ -1,7 +1,9 @@
 export type SiteConfig = typeof siteConfig;
 
+import { app_name } from "@/app/constants";
+
 export const siteConfig = {
-  name: "Next.js + HeroUI",
+  name: app_name,
   description: "Make beautiful websites regardless of your design experience.",
   navItems: [
     {
@@ -60,10 +62,8 @@ export const siteConfig = {
     },
   ],
   links: {
-    github: "https://github.com/heroui-inc/heroui",
-    twitter: "https://twitter.com/hero_ui",
-    docs: "https://heroui.com",
-    discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev",
+    github: "https://github.com/Aditya-Baindur",
+    twitter: "", 
+    discord: ""
   },
 };
