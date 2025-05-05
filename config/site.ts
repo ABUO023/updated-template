@@ -3,6 +3,8 @@ export type SiteConfig = typeof siteConfig;
 import { app_name } from "@/app/constants";
 
 export const siteConfig = {
+
+  
   name: app_name,
   description: "Make beautiful websites regardless of your design experience.",
   navItems: [
@@ -66,4 +68,15 @@ export const siteConfig = {
     twitter: "", 
     discord: ""
   },
+
+  kbarActions: [
+    {
+      id: 'home',
+      name: 'Go to Home',
+      shortcut: ['g', 'h'],
+      keywords: 'home main',
+      section: 'Navigation',
+      perform: () => window.location.pathname = '/',
+    }
+  ]
 };

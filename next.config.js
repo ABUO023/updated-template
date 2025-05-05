@@ -1,8 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-      domains: ['www.servera.dev'],
+      remotePatterns: [
+        {
+          protocol: 'https',
+          hostname: 'www.servera.dev',
+        },
+      ],
     },
   };
   
   module.exports = nextConfig;
+  
